@@ -24,7 +24,7 @@ router.post("/", async (req, res) => {
             console.log(req.session);
             res.redirect("/chat");
           } else {
-            res.send("birşeyler ters gitti!");
+            res.send('<h2 style="color: red; text-align: center; margin-top: 8rem">Email or Password in incorrect!</h2>');
           }
         });
       } else {
