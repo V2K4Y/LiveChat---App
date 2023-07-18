@@ -10,7 +10,7 @@ const chatRouter = require("./routers/chatRouter");
 const Logout = require("./routers/logoutRouter");
 
 const dbUrl =
-  "mongodb+srv://Worza:ylmz0604@cluster0.u0q7l.mongodb.net/ChatSystemV2?retryWrites=true&w=majority";
+  "mongodb+srv://analytics:analytics-password@mflix.bbdasys.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => console.log("connceted"));
